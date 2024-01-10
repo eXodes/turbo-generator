@@ -1,0 +1,11 @@
+// Vitest Snapshot v1, https://vitest.dev/guide/snapshot.html
+
+exports[`Code > should have 'Code' page title 1`] = `
+<body>
+  <div>
+    <code>
+      Code
+    </code>
+  </div>
+</body>
+`;

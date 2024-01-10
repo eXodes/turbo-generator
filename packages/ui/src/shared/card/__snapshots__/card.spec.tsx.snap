@@ -1,0 +1,24 @@
+// Vitest Snapshot v1, https://vitest.dev/guide/snapshot.html
+
+exports[`Card > should have 'Card' page title 1`] = `
+<body>
+  <div>
+    <a
+      href="#?utm_source=create-turbo&utm_medium=basic&utm_campaign=create-turbo""
+      rel="noopener noreferrer"
+      target="_blank"
+    >
+      <h2>
+        Card Title
+         
+        <span>
+          -&gt;
+        </span>
+      </h2>
+      <p>
+        Content
+      </p>
+    </a>
+  </div>
+</body>
+`;
