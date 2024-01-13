@@ -4,19 +4,17 @@
 
 This is a template repository for Turborepo. It contains a generator script that will create NextJS 13 boilerplate files for you to get started with Turborepo.
 
-
 ## Getting Started
 
 1. Use the following command to download the generator script:
 
-    ```bash
-    npx degit eXodes/turbo-generator/turbo ./turbo --force
-    ``` 
-   
+   ```bash
+   npx degit eXodes/turbo-generator/turbo ./turbo --force
+   ```
+
 2. Update `./turbo/generators/_utils/_prompts` according to your project needs.
 
 ### Supported Commands
-
 
 `turbo gen api <name>` - Generates a new API route
 

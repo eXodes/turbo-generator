@@ -14,6 +14,15 @@
     "lint": {
       "dependsOn": ["^lint"]
     },
-    "test": {}
+    "test": {},
+    "storybook": {
+      "cache": false
+    },
+    "build-storybook": {
+      "outputs": ["storybook-static/**"]
+    },
+    "move-storybook": {
+      "cache": false
+    }
   }
 }

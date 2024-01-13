@@ -8,17 +8,31 @@
   "scripts": {
     "lint": "eslint . --max-warnings 0",
     "check": "tsc --jsx react-jsx --skipLibCheck --noEmit",
-    "test": "vitest run"
+    "test": "vitest run",
+    "storybook": "storybook dev -p 6008 --no-open",
+    "build-storybook": "storybook build",
+    "storybook:move": "mv storybook-static ../../storybook-static/ui"
   },
   "devDependencies": {
+    "@storybook/addon-essentials": "^7.6.8",
+    "@storybook/addon-interactions": "^7.6.8",
+    "@storybook/addon-links": "^7.6.8",
+    "@storybook/addon-onboarding": "^1.0.10",
+    "@storybook/blocks": "^7.6.8",
+    "@storybook/react": "^7.6.8",
+    "@storybook/react-vite": "^7.6.8",
+    "@storybook/test": "^7.6.8",
     "@turbo/gen": "^1.11.3",
-    "@types/node": "^20.11.0",
     "@types/eslint": "^8.56.2",
+    "@types/node": "^20.11.0",
     "@types/react": "^18.2.47",
     "@types/react-dom": "^18.2.18",
     "eslint": "^8.56.0",
     "eslint-config-custom": "*",
+    "eslint-plugin-storybook": "^0.6.15",
     "react": "^18.2.0",
+    "react-dom": "^18.2.0",
+    "storybook": "^7.6.8",
     "typescript": "^5.3.3",
     "typescript-config": "*"
   }

@@ -8,6 +8,9 @@
     "test": "turbo run test",
     "check": "turbo run check",
     "format": "prettier --write \"**/*.{ts,tsx,md,json}\"",
+    "storybook": "turbo run storybook --parallel",
+    "build-storybook": "turbo run build-storybook --parallel",
+    "move-storybook": "turbo run move-storybook --filter=docs && turbo run move-storybook --filter=!docs",
     "gen": "turbo gen"
   },
   "workspaces": [
