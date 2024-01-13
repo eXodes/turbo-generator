@@ -49,7 +49,7 @@ const transformPath = (input: string) => {
 
 export const generateTargetPrompt = (
   generator: string,
-  { target, server }: PromptOptions
+  { target, server }: PromptOptions,
 ): PromptQuestion => {
   return {
     type: "list",
@@ -62,7 +62,7 @@ export const generateTargetPrompt = (
 
 export const generateNamePrompt = (
   generator: string,
-  options?: Pick<PromptOptions, "layout">
+  options?: Pick<PromptOptions, "layout">,
 ): PromptQuestion => {
   const layout = options?.layout ?? false;
 
@@ -89,7 +89,7 @@ export const generateNamePrompt = (
 
 export const generateDirectoryPrompt = (
   generator: string,
-  options: Pick<PromptOptions, "server">
+  options: Pick<PromptOptions, "server">,
 ): PromptQuestion => {
   return {
     type: "input",
@@ -108,7 +108,7 @@ export const generateDirectoryPrompt = (
 
 export const generateRoutePrompt = (
   generator: string,
-  options: Pick<PromptOptions, "server">
+  options: Pick<PromptOptions, "server">,
 ): PromptQuestion => {
   return {
     type: "input",
@@ -141,7 +141,7 @@ export const generateMethodPrompt = (): PromptQuestion => {
 };
 
 export const generateClientPrompt = (
-  options: Pick<PromptOptions, "client">
+  options: Pick<PromptOptions, "client">,
 ): PromptQuestion => {
   return {
     type: "confirm",
@@ -154,7 +154,7 @@ export const generateClientPrompt = (
 
 export const generateDefaultPrompts = (
   generator: string,
-  options: PromptOptions
+  options: PromptOptions,
 ) => {
   return [
     generateTargetPrompt(generator, options),

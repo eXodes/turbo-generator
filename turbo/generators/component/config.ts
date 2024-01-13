@@ -21,6 +21,11 @@ export const componentConfig: PlopGeneratorConfig = {
       templateFile: "component/templates/component.spec.tsx.hbs",
     },
     {
+      type: "add",
+      path: "{{ turbo.paths.root }}/{{ target }}/{{ directory }}/{{ name }}/{{ name }}.stories.tsx",
+      templateFile: "component/templates/component.stories.tsx.hbs",
+    },
+    {
       type: "append",
       path: "{{ turbo.paths.root }}/{{ target }}/index.tsx",
       templateFile: "component/templates/index.tsx.hbs",
