@@ -1,0 +1,12 @@
+import type { JSX, ReactNode } from "react";
+
+interface {{ pascalCase route }}LayoutProps {
+    children: ReactNode;
+}
+
+const {{ pascalCase route }}Layout = ({ children }: {{ pascalCase route }}LayoutProps): JSX.Element => {
+    return <section>{children}</section>;
+};
+
+export { type {{ pascalCase route }}LayoutProps }
+export default {{ pascalCase route }}Layout

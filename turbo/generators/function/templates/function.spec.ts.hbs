@@ -1,0 +1,11 @@
+import { describe, expect, it } from "vitest";
+
+import { {{ camelCase name }} } from "./{{ name }}";
+
+describe("{{ camelCase name }}", () => {
+    it("should return {{ camelCase name }} value", async () => {
+        const result = {{ camelCase name }}();
+
+        expect(result).toMatchInlineSnapshot();
+    });
+});

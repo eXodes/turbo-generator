@@ -1,0 +1,25 @@
+import type { ReactNode } from "react";
+import { describe, expect, it } from "vitest";
+import { renderHook } from "@testing-library/react";
+import { use{{ pascalCase name }}Context } from "./use-{{ name }}";
+import { {{ pascalCase name }}ContextType, {{ pascalCase name }}ContextProvider } from "./{{ name }}.provider";
+
+describe("use{{ pascalCase name }}Context", () => {
+    it("should return {{ pascalCase name }}Context value", () => {
+        const Wrapper = ({ children }: { children: ReactNode }) => {
+            const context: {{ pascalCase name }}ContextType = {};
+
+            return (
+                <{{ pascalCase name }}ContextProvider context={context}>
+                    {children}
+                </{{ pascalCase name }}ContextProvider>
+            );
+        };
+
+        const { result } = renderHook(() => use{{ pascalCase name }}Context(), {
+            wrapper: Wrapper,
+        });
+
+        expect(result.current).toMatchInlineSnapshot();
+    });
+});

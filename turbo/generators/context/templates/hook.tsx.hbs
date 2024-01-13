@@ -1,0 +1,12 @@
+import { useContext } from "react"
+import { type {{ pascalCase name }}ContextType, {{ pascalCase name }}Context } from "./{{ dashCase name }}.provider"
+
+const use{{ pascalCase name }}Context = (): {{ pascalCase name }}ContextType => {
+    const {{ camelCase name }}Context = useContext({{ pascalCase name }}Context);
+
+    return {{ camelCase name }}Context;
+};
+
+export {
+    use{{ pascalCase name }}Context
+};

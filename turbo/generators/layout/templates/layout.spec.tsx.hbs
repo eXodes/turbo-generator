@@ -1,0 +1,12 @@
+import { describe, expect, it } from "vitest";
+import { render } from "@testing-library/react";
+
+import {{ pascalCase route }}Layout from "./layout";
+
+describe("{{ pascalCase route }}Layout", () => {
+    it("should render successfully", async () => {
+        const { container }  = render(<{{ pascalCase route }}Layout>Content</{{ pascalCase route }}Layout>);
+
+        expect(container).toMatchSnapshot()
+    });
+});

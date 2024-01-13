@@ -1,0 +1,12 @@
+import { describe, expect, it } from "vitest";
+import { render } from "@testing-library/react";
+
+import { {{ pascalCase name }} } from "./{{ name }}";
+
+describe("{{ pascalCase name }}", () => {
+    it("should render successfully", async () => {
+        const { container }  = render(<{{ pascalCase name }} />);
+
+        expect(container).toMatchSnapshot()
+    });
+});

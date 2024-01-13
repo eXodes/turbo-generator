@@ -1,0 +1,12 @@
+import { describe, expect, it } from "vitest";
+import { render } from "@testing-library/react";
+
+import Loading{{ pascalCase name }}Page from "./loading";
+
+describe("Loading{{ pascalCase name }}Page", () => {
+    it("should render successfully", async () => {
+        const { container } = render(<Loading{{ pascalCase name }}Page />);
+
+        expect(container).toMatchSnapshot();
+    });
+});

@@ -1,0 +1,32 @@
+import type { ReactNode } from "react";
+import { describe, expect, it } from "vitest";
+import { render } from "@testing-library/react";
+
+import { {{ pascalCase name }}ContextType, {{ pascalCase name }}ContextProvider } from "./{{ name }}.provider";
+import { use{{ pascalCase name }}Context } from "./use-{{ name }}";
+
+describe("{{ pascalCase name }}ContextProvider", () => {
+    it("should render {{ pascalCase name }}Context value", async () => {
+        const Wrapper = ({ children }: { children: ReactNode }) => {
+            const context: {{ pascalCase name }}ContextType = {};
+
+            return (
+                <{{ pascalCase name }}ContextProvider context={context}>
+                    {children}
+                </{{ pascalCase name }}ContextProvider>
+            );
+        };
+
+        const Component = () => {
+            const context = use{{ pascalCase name }}Context();
+
+            return <>{context}</>;
+        };
+
+        const { container } = render(<Component />, {
+            wrapper: Wrapper,
+        });
+
+        expect(container).toMatchSnapshot()
+    });
+});

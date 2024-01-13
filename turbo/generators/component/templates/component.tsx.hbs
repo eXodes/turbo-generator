@@ -1,0 +1,18 @@
+{{#if client}}
+"use client";
+
+{{/if}}
+import type { JSX } from "react";
+
+interface {{ pascalCase name }}Props {
+    /* remove interface if props are not used */
+}
+
+const {{ pascalCase name }} = (props: {{ pascalCase name }}Props): JSX.Element => {
+    return <div>{/* add component implementation */}</div>;
+};
+
+export {
+    type {{ pascalCase name }}Props,
+    {{ pascalCase name }}
+}

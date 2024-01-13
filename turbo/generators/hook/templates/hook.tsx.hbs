@@ -1,0 +1,12 @@
+interface Use{{ pascalCase name }}Props {
+    /* remove interface if props are not used */
+}
+
+const use{{ pascalCase name }} = (input?: Use{{ pascalCase name }}Props): void => {
+    /* add implementations */
+};
+
+export {
+    type Use{{ pascalCase name }}Props,
+    use{{ pascalCase name }}
+}

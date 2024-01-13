@@ -1,0 +1,17 @@
+import type { Metadata, NextPage } from "next";
+import type { JSX } from "react";
+
+const metadata: Metadata = {
+    title: "{{ titleCase name }}",
+};
+
+interface {{ pascalCase name }}PageProps {
+    /* remove interface if props are not used */
+}
+
+const {{ pascalCase name }}Page: NextPage<{{ pascalCase name }}PageProps> = (props): JSX.Element => {
+    return <div>{/* add page implementation */}</div>;
+};
+
+export { type {{ pascalCase name }}PageProps, metadata }
+export default {{ pascalCase name }}Page;
