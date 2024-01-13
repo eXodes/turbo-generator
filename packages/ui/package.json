@@ -11,7 +11,7 @@
     "test": "vitest run",
     "storybook": "storybook dev -p 6008 --no-open",
     "build-storybook": "storybook build",
-    "storybook:move": "mv storybook-static ../../storybook-static/ui"
+    "move-storybook": "mv storybook-static ../../storybook-static/ui"
   },
   "devDependencies": {
     "@storybook/addon-essentials": "^7.6.8",
